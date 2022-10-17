@@ -1,0 +1,21 @@
+<?php
+
+namespace {%namespace%};
+
+use {%baseControllerNamespace%};
+use {%logicNamespace%};
+
+class {%className%} extends {%baseController%}
+{
+    /**
+     * @var {%logicName%}
+     */
+    protected $logic = null;
+
+    public function initialize()
+    {
+        parent::initialize();
+        $this->logic = new {%logicName%}();
+    }
+
+}

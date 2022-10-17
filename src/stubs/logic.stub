@@ -1,0 +1,22 @@
+<?php
+
+namespace {%namespace%};
+
+use {%modelNamespace%}
+use app\common\logic\ResLogic;
+class {%className%} extends ResLogic
+{
+    /**
+     * @var {%modelName%}
+     */
+    protected $model = null;
+
+    public function initialize()
+    {
+       parent::initialize();
+       $this->model = new {%modelName%}();
+    }
+
+
+
+}
